@@ -1,0 +1,532 @@
+{
+  "commandType": "EVAL",
+  "rootUri": "/home/maturgeo/rastervision_tests/output/eval/potsdam-seg",
+  "evalConfig": {
+    "task": {
+      "taskType": "SEMANTIC_SEGMENTATION",
+      "predictBatchSize": 10,
+      "debug": true,
+      "semanticSegmentationConfig": {
+        "classItems": [
+          {
+            "id": 1,
+            "name": "Car",
+            "color": "#ffff00"
+          },
+          {
+            "id": 2,
+            "name": "Building",
+            "color": "#0000ff"
+          },
+          {
+            "id": 3,
+            "name": "Low Vegetation",
+            "color": "#00ffff"
+          },
+          {
+            "id": 4,
+            "name": "Tree",
+            "color": "#00ff00"
+          },
+          {
+            "id": 5,
+            "name": "Impervious",
+            "color": "#ffffff"
+          },
+          {
+            "id": 6,
+            "name": "Clutter",
+            "color": "#ff0000"
+          }
+        ],
+        "chipSize": 300,
+        "chipOptions": {
+          "windowMethod": "sliding",
+          "debugChipProbability": 1.0,
+          "negativeSurvivalProbability": 1.0,
+          "chipsPerScene": 1000,
+          "targetCountThreshold": 1000,
+          "stride": 300
+        },
+        "predictChipSize": 300
+      }
+    },
+    "scenes": [
+      {
+        "id": "2_12",
+        "rasterSource": {
+          "sourceType": "RASTERIO_SOURCE",
+          "channelOrder": [
+            0,
+            1,
+            2
+          ],
+          "rasterioSource": {
+            "uris": [
+              "/home/maturgeo/rastervision_tests/potsdam_data/2_Ortho_RGB/top_potsdam_2_12_RGB.tif"
+            ],
+            "xShiftMeters": 0.0,
+            "yShiftMeters": 0.0
+          }
+        },
+        "groundTruthLabelSource": {
+          "sourceType": "SEMANTIC_SEGMENTATION_RASTER",
+          "semanticSegmentationLabelSource": {
+            "source": {
+              "sourceType": "RASTERIO_SOURCE",
+              "rasterioSource": {
+                "uris": [
+                  "/home/maturgeo/rastervision_tests/potsdam_data/5_Labels_all/top_potsdam_2_12_label.tif"
+                ],
+                "xShiftMeters": 0.0,
+                "yShiftMeters": 0.0
+              }
+            },
+            "rgbClassItems": [
+              {
+                "id": 1,
+                "name": "Car",
+                "color": "#ffff00"
+              },
+              {
+                "id": 2,
+                "name": "Building",
+                "color": "#0000ff"
+              },
+              {
+                "id": 3,
+                "name": "Low Vegetation",
+                "color": "#00ffff"
+              },
+              {
+                "id": 4,
+                "name": "Tree",
+                "color": "#00ff00"
+              },
+              {
+                "id": 5,
+                "name": "Impervious",
+                "color": "#ffffff"
+              },
+              {
+                "id": 6,
+                "name": "Clutter",
+                "color": "#ff0000"
+              }
+            ]
+          }
+        },
+        "predictionLabelStore": {
+          "storeType": "SEMANTIC_SEGMENTATION_RASTER",
+          "semanticSegmentationRasterStore": {
+            "uri": "/home/maturgeo/rastervision_tests/output/predict/potsdam-seg/2_12.tif",
+            "rgb": true
+          }
+        }
+      },
+      {
+        "id": "3_12",
+        "rasterSource": {
+          "sourceType": "RASTERIO_SOURCE",
+          "channelOrder": [
+            0,
+            1,
+            2
+          ],
+          "rasterioSource": {
+            "uris": [
+              "/home/maturgeo/rastervision_tests/potsdam_data/2_Ortho_RGB/top_potsdam_3_12_RGB.tif"
+            ],
+            "xShiftMeters": 0.0,
+            "yShiftMeters": 0.0
+          }
+        },
+        "groundTruthLabelSource": {
+          "sourceType": "SEMANTIC_SEGMENTATION_RASTER",
+          "semanticSegmentationLabelSource": {
+            "source": {
+              "sourceType": "RASTERIO_SOURCE",
+              "rasterioSource": {
+                "uris": [
+                  "/home/maturgeo/rastervision_tests/potsdam_data/5_Labels_all/top_potsdam_3_12_label.tif"
+                ],
+                "xShiftMeters": 0.0,
+                "yShiftMeters": 0.0
+              }
+            },
+            "rgbClassItems": [
+              {
+                "id": 1,
+                "name": "Car",
+                "color": "#ffff00"
+              },
+              {
+                "id": 2,
+                "name": "Building",
+                "color": "#0000ff"
+              },
+              {
+                "id": 3,
+                "name": "Low Vegetation",
+                "color": "#00ffff"
+              },
+              {
+                "id": 4,
+                "name": "Tree",
+                "color": "#00ff00"
+              },
+              {
+                "id": 5,
+                "name": "Impervious",
+                "color": "#ffffff"
+              },
+              {
+                "id": 6,
+                "name": "Clutter",
+                "color": "#ff0000"
+              }
+            ]
+          }
+        },
+        "predictionLabelStore": {
+          "storeType": "SEMANTIC_SEGMENTATION_RASTER",
+          "semanticSegmentationRasterStore": {
+            "uri": "/home/maturgeo/rastervision_tests/output/predict/potsdam-seg/3_12.tif",
+            "rgb": true
+          }
+        }
+      },
+      {
+        "id": "4_12",
+        "rasterSource": {
+          "sourceType": "RASTERIO_SOURCE",
+          "channelOrder": [
+            0,
+            1,
+            2
+          ],
+          "rasterioSource": {
+            "uris": [
+              "/home/maturgeo/rastervision_tests/potsdam_data/2_Ortho_RGB/top_potsdam_4_12_RGB.tif"
+            ],
+            "xShiftMeters": 0.0,
+            "yShiftMeters": 0.0
+          }
+        },
+        "groundTruthLabelSource": {
+          "sourceType": "SEMANTIC_SEGMENTATION_RASTER",
+          "semanticSegmentationLabelSource": {
+            "source": {
+              "sourceType": "RASTERIO_SOURCE",
+              "rasterioSource": {
+                "uris": [
+                  "/home/maturgeo/rastervision_tests/potsdam_data/5_Labels_all/top_potsdam_4_12_label.tif"
+                ],
+                "xShiftMeters": 0.0,
+                "yShiftMeters": 0.0
+              }
+            },
+            "rgbClassItems": [
+              {
+                "id": 1,
+                "name": "Car",
+                "color": "#ffff00"
+              },
+              {
+                "id": 2,
+                "name": "Building",
+                "color": "#0000ff"
+              },
+              {
+                "id": 3,
+                "name": "Low Vegetation",
+                "color": "#00ffff"
+              },
+              {
+                "id": 4,
+                "name": "Tree",
+                "color": "#00ff00"
+              },
+              {
+                "id": 5,
+                "name": "Impervious",
+                "color": "#ffffff"
+              },
+              {
+                "id": 6,
+                "name": "Clutter",
+                "color": "#ff0000"
+              }
+            ]
+          }
+        },
+        "predictionLabelStore": {
+          "storeType": "SEMANTIC_SEGMENTATION_RASTER",
+          "semanticSegmentationRasterStore": {
+            "uri": "/home/maturgeo/rastervision_tests/output/predict/potsdam-seg/4_12.tif",
+            "rgb": true
+          }
+        }
+      },
+      {
+        "id": "5_12",
+        "rasterSource": {
+          "sourceType": "RASTERIO_SOURCE",
+          "channelOrder": [
+            0,
+            1,
+            2
+          ],
+          "rasterioSource": {
+            "uris": [
+              "/home/maturgeo/rastervision_tests/potsdam_data/2_Ortho_RGB/top_potsdam_5_12_RGB.tif"
+            ],
+            "xShiftMeters": 0.0,
+            "yShiftMeters": 0.0
+          }
+        },
+        "groundTruthLabelSource": {
+          "sourceType": "SEMANTIC_SEGMENTATION_RASTER",
+          "semanticSegmentationLabelSource": {
+            "source": {
+              "sourceType": "RASTERIO_SOURCE",
+              "rasterioSource": {
+                "uris": [
+                  "/home/maturgeo/rastervision_tests/potsdam_data/5_Labels_all/top_potsdam_5_12_label.tif"
+                ],
+                "xShiftMeters": 0.0,
+                "yShiftMeters": 0.0
+              }
+            },
+            "rgbClassItems": [
+              {
+                "id": 1,
+                "name": "Car",
+                "color": "#ffff00"
+              },
+              {
+                "id": 2,
+                "name": "Building",
+                "color": "#0000ff"
+              },
+              {
+                "id": 3,
+                "name": "Low Vegetation",
+                "color": "#00ffff"
+              },
+              {
+                "id": 4,
+                "name": "Tree",
+                "color": "#00ff00"
+              },
+              {
+                "id": 5,
+                "name": "Impervious",
+                "color": "#ffffff"
+              },
+              {
+                "id": 6,
+                "name": "Clutter",
+                "color": "#ff0000"
+              }
+            ]
+          }
+        },
+        "predictionLabelStore": {
+          "storeType": "SEMANTIC_SEGMENTATION_RASTER",
+          "semanticSegmentationRasterStore": {
+            "uri": "/home/maturgeo/rastervision_tests/output/predict/potsdam-seg/5_12.tif",
+            "rgb": true
+          }
+        }
+      },
+      {
+        "id": "6_12",
+        "rasterSource": {
+          "sourceType": "RASTERIO_SOURCE",
+          "channelOrder": [
+            0,
+            1,
+            2
+          ],
+          "rasterioSource": {
+            "uris": [
+              "/home/maturgeo/rastervision_tests/potsdam_data/2_Ortho_RGB/top_potsdam_6_12_RGB.tif"
+            ],
+            "xShiftMeters": 0.0,
+            "yShiftMeters": 0.0
+          }
+        },
+        "groundTruthLabelSource": {
+          "sourceType": "SEMANTIC_SEGMENTATION_RASTER",
+          "semanticSegmentationLabelSource": {
+            "source": {
+              "sourceType": "RASTERIO_SOURCE",
+              "rasterioSource": {
+                "uris": [
+                  "/home/maturgeo/rastervision_tests/potsdam_data/5_Labels_all/top_potsdam_6_12_label.tif"
+                ],
+                "xShiftMeters": 0.0,
+                "yShiftMeters": 0.0
+              }
+            },
+            "rgbClassItems": [
+              {
+                "id": 1,
+                "name": "Car",
+                "color": "#ffff00"
+              },
+              {
+                "id": 2,
+                "name": "Building",
+                "color": "#0000ff"
+              },
+              {
+                "id": 3,
+                "name": "Low Vegetation",
+                "color": "#00ffff"
+              },
+              {
+                "id": 4,
+                "name": "Tree",
+                "color": "#00ff00"
+              },
+              {
+                "id": 5,
+                "name": "Impervious",
+                "color": "#ffffff"
+              },
+              {
+                "id": 6,
+                "name": "Clutter",
+                "color": "#ff0000"
+              }
+            ]
+          }
+        },
+        "predictionLabelStore": {
+          "storeType": "SEMANTIC_SEGMENTATION_RASTER",
+          "semanticSegmentationRasterStore": {
+            "uri": "/home/maturgeo/rastervision_tests/output/predict/potsdam-seg/6_12.tif",
+            "rgb": true
+          }
+        }
+      },
+      {
+        "id": "7_12",
+        "rasterSource": {
+          "sourceType": "RASTERIO_SOURCE",
+          "channelOrder": [
+            0,
+            1,
+            2
+          ],
+          "rasterioSource": {
+            "uris": [
+              "/home/maturgeo/rastervision_tests/potsdam_data/2_Ortho_RGB/top_potsdam_7_12_RGB.tif"
+            ],
+            "xShiftMeters": 0.0,
+            "yShiftMeters": 0.0
+          }
+        },
+        "groundTruthLabelSource": {
+          "sourceType": "SEMANTIC_SEGMENTATION_RASTER",
+          "semanticSegmentationLabelSource": {
+            "source": {
+              "sourceType": "RASTERIO_SOURCE",
+              "rasterioSource": {
+                "uris": [
+                  "/home/maturgeo/rastervision_tests/potsdam_data/5_Labels_all/top_potsdam_7_12_label.tif"
+                ],
+                "xShiftMeters": 0.0,
+                "yShiftMeters": 0.0
+              }
+            },
+            "rgbClassItems": [
+              {
+                "id": 1,
+                "name": "Car",
+                "color": "#ffff00"
+              },
+              {
+                "id": 2,
+                "name": "Building",
+                "color": "#0000ff"
+              },
+              {
+                "id": 3,
+                "name": "Low Vegetation",
+                "color": "#00ffff"
+              },
+              {
+                "id": 4,
+                "name": "Tree",
+                "color": "#00ff00"
+              },
+              {
+                "id": 5,
+                "name": "Impervious",
+                "color": "#ffffff"
+              },
+              {
+                "id": 6,
+                "name": "Clutter",
+                "color": "#ff0000"
+              }
+            ]
+          }
+        },
+        "predictionLabelStore": {
+          "storeType": "SEMANTIC_SEGMENTATION_RASTER",
+          "semanticSegmentationRasterStore": {
+            "uri": "/home/maturgeo/rastervision_tests/output/predict/potsdam-seg/7_12.tif",
+            "rgb": true
+          }
+        }
+      }
+    ],
+    "evaluators": [
+      {
+        "evaluatorType": "SEMANTIC_SEGMENTATION_EVALUATOR",
+        "classificationConfig": {
+          "outputUri": "/home/maturgeo/rastervision_tests/output/eval/potsdam-seg/eval.json",
+          "classItems": [
+            {
+              "id": 1,
+              "name": "Car",
+              "color": "#ffff00"
+            },
+            {
+              "id": 2,
+              "name": "Building",
+              "color": "#0000ff"
+            },
+            {
+              "id": 3,
+              "name": "Low Vegetation",
+              "color": "#00ffff"
+            },
+            {
+              "id": 4,
+              "name": "Tree",
+              "color": "#00ff00"
+            },
+            {
+              "id": 5,
+              "name": "Impervious",
+              "color": "#ffffff"
+            },
+            {
+              "id": 6,
+              "name": "Clutter",
+              "color": "#ff0000"
+            }
+          ],
+          "vectorOutputUri": "/home/maturgeo/rastervision_tests/output/eval/potsdam-seg/vector-eval.json"
+        }
+      }
+    ]
+  },
+  "plugins": {},
+  "splitId": 0
+}
