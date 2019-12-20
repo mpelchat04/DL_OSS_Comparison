@@ -43,3 +43,9 @@ f-score, sur l'ensemble des tuiles de Validation.
 |0.00001|0.88   |0.94   |0.83   |0.82   |0.90   |0.36   |
 |0.0001 |0.91   |0.95   |0.85   |0.84   |0.91   |0.41   |
 |0.001  |0.90   |0.95   |0.85   |0.84   |0.91   |0.42   |
+
+Résultats sur la tuile 3-12  
+![3_12](./images/results_3_12.png)
+  
+Résultats sur la tuile 6-12  
+![6_12](./images/results_6_12.png)
